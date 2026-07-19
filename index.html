@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RPK | Riza Parfum Kendal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+
+    <img src="img/Logo.png" alt="Logo RPK">
+
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="#produk">Produk</a>
+<a href="#checkout">Checkout</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Luxury Fragrance</h1>
+
+<p>
+RPK menghadirkan pilihan parfum premium yang terinspirasi dari keindahan aroma berkelas dunia. Dengan perpaduan komposisi wewangian yang harmonis, setiap varian menawarkan karakter yang unik, elegan, dan memikat. Kami percaya bahwa aroma yang tepat mampu membangun rasa percaya diri, memperkuat kesan pertama, serta menjadi bagian dari cerita dan perjalanan setiap individu.
+</p>
+
+<button onclick="document.getElementById('produk').scrollIntoView()">
+Lihat Produk
+</button>
+
+</section>
+
+<section id="produk">
+
+<h2>Produk Kami</h2>
+
+<div class="produk-container">
+
+<div class="card" id="card1">
+
+<img src="img/images1.jpg"
+alt="Jaques Yves Imaginary">
+
+<h3>Jaques Yves Imaginary</h3>
+
+<p>Fresh • Citrus • Woody</p>
+
+<h4>Rp 330.000</h4>
+
+<button onclick="pilihProduk('Jaques Yves Imaginary',330000,'card1')">
+Beli
+</button>
+
+</div>
+
+<div class="card" id="card2">
+
+<img src="img/perfume-jacques-yves-l_infinite-fragrance-world-100ml.webp"
+alt="L Infinite">
+<h3>L Infinite</h3>
+
+<p>Sweet • Amber • Musky</p>
+
+<h4>Rp 195.000</h4>
+
+<button onclick="pilihProduk('L Infinite',195000,'card2')">
+Beli
+</button>
+
+</div>
+
+</div>
+
+<section id="checkout">
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="tutupModal()">&times;</span>
+
+<h2>Checkout</h2>
+
+<label>Nama</label>
+
+<input type="text" id="nama">
+
+<label>Produk</label>
+
+<input type="text" id="produkDipilih" readonly>
+
+<label>Harga</label>
+
+<input type="text" id="harga" readonly>
+
+<label>Jumlah</label>
+
+<input type="number" id="jumlah"
+value="1"
+min="1"
+oninput="hitungTotal()">
+
+<label>Total</label>
+
+<input type="text" id="total" readonly>
+
+<button type="button" onclick="checkout()">
+    <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
