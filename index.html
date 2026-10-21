@@ -1,139 +1,251 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPK | Riza Parfum Kendal</title>
 
-<title>RPK | Riza Parfum Kendal</title>
+    <meta name="description"
+          content="RPK menghadirkan parfum premium dengan aroma elegan dan berkelas untuk menunjang kepercayaan diri Anda.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-<header>
+    <!-- HEADER -->
 
-<div class="logo">
+    <header>
 
-    <img src="img/Logo.png" alt="Logo RPK">
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo RPK">
+        </div>
 
-</div>
-<nav>
-<a href="#">Home</a>
-<a href="#produk">Produk</a>
-<a href="#checkout">Checkout</a>
-</nav>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#checkout">Checkout</a>
+        </nav>
 
-</header>
+    </header>
 
-<section class="hero">
+    <!-- HERO -->
 
-<h1>Luxury Fragrance</h1>
+    <section class="hero">
 
-<p>
-RPK menghadirkan pilihan parfum premium yang terinspirasi dari keindahan aroma berkelas dunia. Dengan perpaduan komposisi wewangian yang harmonis, setiap varian menawarkan karakter yang unik, elegan, dan memikat. Kami percaya bahwa aroma yang tepat mampu membangun rasa percaya diri, memperkuat kesan pertama, serta menjadi bagian dari cerita dan perjalanan setiap individu.
-</p>
+        <div class="hero-content">
 
-<button onclick="document.getElementById('produk').scrollIntoView()">
-Lihat Produk
-</button>
+            <h1>Luxury Fragrance</h1>
 
-</section>
+            <p>
+                RPK menghadirkan pilihan parfum premium yang
+                terinspirasi dari keindahan aroma berkelas dunia.
+                Dengan perpaduan komposisi wewangian yang harmonis,
+                setiap varian menawarkan karakter yang unik,
+                elegan, dan memikat.
 
-<section id="produk">
+                Kami percaya bahwa aroma yang tepat mampu membangun
+                rasa percaya diri, memperkuat kesan pertama,
+                serta menjadi bagian dari cerita dan perjalanan
+                setiap individu.
+            </p>
 
-<h2>Produk Kami</h2>
+            <button
+                onclick="document.getElementById('produk').scrollIntoView({behavior:'smooth'})">
+                Lihat Produk
+            </button>
 
-<div class="produk-container">
+        </div>
 
-<div class="card" id="card1">
+    </section>
 
-<img src="img/images1.jpg"
-alt="Jaques Yves Imaginary">
+    <!-- PRODUK -->
 
-<h3>Jaques Yves Imaginary</h3>
+    <section id="produk">
 
-<p>Fresh • Citrus • Woody</p>
+        <h2>Produk Kami</h2>
 
-<h4>Rp 330.000</h4>
+        <div class="produk-container">
 
-<button onclick="pilihProduk('Jaques Yves Imaginary',330000,'card1')">
-Beli
-</button>
+            <!-- PRODUK 1 -->
 
-</div>
+            <div class="card" id="card1">
 
-<div class="card" id="card2">
+                <img
+                    src="img/images1.jpg"
+                    alt="Jaques Yves Imaginary">
 
-<img src="img/perfume-jacques-yves-l_infinite-fragrance-world-100ml.webp"
-alt="L Infinite">
-<h3>L Infinite</h3>
+                <h3>Jaques Yves Imaginary</h3>
 
-<p>Sweet • Amber • Musky</p>
+                <p>
+                    Fresh • Citrus • Woody
+                </p>
 
-<h4>Rp 195.000</h4>
+                <h4>Rp 330.000</h4>
 
-<button onclick="pilihProduk('L Infinite',195000,'card2')">
-Beli
-</button>
+                <button
+                    onclick="pilihProduk('Jaques Yves Imaginary',330000,'card1')">
+                    Beli
+                </button>
 
-</div>
+            </div>
 
-</div>
+            <!-- PRODUK 2 -->
 
-<section id="checkout">
+            <div class="card" id="card2">
 
-<div class="modal" id="modal">
+                <img
+                    src="img/perfume-jacques-yves-l_infinite-fragrance-world-100ml.webp"
+                    alt="L Infinite">
 
-<div class="modal-content">
+                <h3>L Infinite</h3>
 
-<span class="close" onclick="tutupModal()">&times;</span>
+                <p>
+                    Sweet • Amber • Musky
+                </p>
 
-<h2>Checkout</h2>
+                <h4>Rp 195.000</h4>
 
-<label>Nama</label>
+                <button
+                    onclick="pilihProduk('L Infinite',195000,'card2')">
+                    Beli
+                </button>
 
-<input type="text" id="nama">
+            </div>
 
-<label>Produk</label>
+        </div>
 
-<input type="text" id="produkDipilih" readonly>
+    </section>
 
-<label>Harga</label>
+    <!-- CHECKOUT -->
 
-<input type="text" id="harga" readonly>
+    <section id="checkout">
 
-<label>Jumlah</label>
+        <div class="modal" id="modal">
 
-<input type="number" id="jumlah"
-value="1"
-min="1"
-oninput="hitungTotal()">
+            <div class="modal-content">
 
-<label>Total</label>
+                <span
+                    class="close"
+                    onclick="tutupModal()">
+                    &times;
+                </span>
 
-<input type="text" id="total" readonly>
+                <h2>Checkout</h2>
 
-<button type="button" onclick="checkout()">
-    <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp
-</button>
+                <label for="nama">
+                    Nama
+                </label>
 
-</div>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama Anda">
 
-</div>
+                <label for="produkDipilih">
+                    Produk
+                </label>
 
-</section>
+                <input
+                    type="text"
+                    id="produkDipilih"
+                    readonly>
 
-<script src="script.js"></script>
+                <label for="harga">
+                    Harga
+                </label>
+
+                <input
+                    type="text"
+                    id="harga"
+                    readonly>
+
+                <label for="jumlah">
+                    Jumlah
+                </label>
+
+                <input
+                    type="number"
+                    id="jumlah"
+                    value="1"
+                    min="1"
+                    oninput="hitungTotal()">
+
+                <label for="total">
+                    Total
+                </label>
+
+                <input
+                    type="text"
+                    id="total"
+                    readonly>
+
+                <button
+                    type="button"
+                    onclick="checkout()">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Pesan via WhatsApp
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>RPK</h3>
+
+            <p>
+                Premium Fragrance Collection
+            </p>
+
+            <div class="social">
+
+                <a href="#"
+                   aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#"
+                   aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="#"
+                   aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 RPK | Riza Parfum Kendal
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
